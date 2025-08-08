@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Introduction</title>
+    <script src="Introduction.js" defer></script>
+    <script type="module" defer>
+        import { Employee, add, update} from './Employee.js';
+        let employee = new Employee();
+        employee.ShowempInfo();
+        alert(add(5, 10));
+
+        document.getElementById("btn").addEventListener("click", function(event){
+            //update();
+
+            event.target.value = "Button Clicked!";
+            event.target.style.backgroundColor = "red";
+        });
+    </script>
+</head>
+<body>
+    <h1>Welcome to JavaScript Session</h1>
+    <input type = "button" id = "btn"  value = "Click" onclick = "update()" />
+
+</body>
+</html>
